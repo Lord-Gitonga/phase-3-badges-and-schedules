@@ -65,6 +65,9 @@ describe 'conference_badges' do
 
   end
 
+  
+
+
   describe '#batch_badge_creator' do
 
     # Question 2b
@@ -78,14 +81,16 @@ describe 'conference_badges' do
 
   end
 
-  describe '#assign_rooms' do
+  batch_badge_creator
 
-    # Question 3
+    describe '#assign_rooms' do
 
-    it 'returns a list of welcome messages and room assignments' do
+      # Question 3
+
+      it 'returns a list of welcome messages and room assignments' do
       expect(assign_rooms(attendees)).to eq(room_assignments)
-    end
-    it 'does not hard-code the response' do
+      end
+      it 'does not hard-code the response' do
       expect(assign_rooms(["Steve"])).to eq(["Hello, Steve! You'll be assigned to room 1!"])
     end
 
